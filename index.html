@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script ></script>
+</head>
+<body>
+    <div class="label1">
+    <label for="gridSize" id="gridsizee"> Grid Size:</label>
+    <input type="number" id="gridSize" value="6" min="1" max="50" oninput="updateGridSize()">
+    </div>
+    
+    <div class="label2">
+    <label for="colorPicker" id="gridsizee">Color:</label>
+    <input type="color" id="colorPicker" value="#000000" onchange="updateColor()">
+    </div>
+    
+    <div class="label3">
+    <button onclick="clearCanvas()" >Clear</button>
+    <button onclick="toggleErase()">Erase</button>
+    </div>
+
+    <canvas id="space" width="400" height="400"></canvas>
+    <script src="script.js"></script>
+</body>
+</html>
